@@ -10,4 +10,94 @@
 
 body {
   background-color: var(--bg);
+  color: #101935;
+}
+
+h1 {
+  font-size: 48px;
+  color: #7e7f9a;
+  text-align: center;
+}
+
+main p {
+  font-size: 32px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 24px;
+}
+
+header .row{
+  height: 75px;
+  background-color: #f2fdff;
+  width: 100%;
+}
+
+header img {
+  float: left;
+}
+
+.btn {
+  color: black;
+  font-size: 24px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  border: 2px solid #101935;
+  border-radius: 20px;
+}
+
+.btn:hover{
+  border-color: #7e7f9a;
+  color: #f2fdff;
+  background-color: #7e7f9a;
+} 
+
+.primary {
+  background-color: #101935;
+  color: #f2fdff;
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  margin-top: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul a {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+main {
+  margin: 5%;
+}
+
+main .col {
+  width: 50%;
+  margin: 0;
+  float: left;
+  padding: 50px;
+}
+
+form {
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  margin-top: 200px;
+  scale: 2;
+}
+
+form label, form input{
+  text-align: center;
+  width: 100%;
+  margin: 5px 0 5px 0;
 }

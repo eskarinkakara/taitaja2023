@@ -8,28 +8,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon">
     <title>Weather Oy</title>
   </head>
   <body>
     <header>
       <div class="row">
         <div class="col">
-          <img src="#" alt="Weather Oy logo" />
+          <img src="../assets/logo/Logo light.png" alt="Weather Oy logo" />
         </div>
         <div class="col">
           <nav>
             <ul>
-              <li><a href="#" class="btn secondary">Kirjaudu</a></li>
-              <li>
-                <a class="icon">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </li>
+              <li><a href="login.php" class="btn secondary">Kirjaudu</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+  <?php
+  session_start();
+  if (!isset($_SESSION['user']) or isset($_GET['etusivu'])) {
+    
+  ?>
     <main>
       <section>
         <div class="row">
@@ -40,10 +41,10 @@
               dignissim lacinia justo id molestie. Nulla facilisi. Duis eu enim
               et augue consequat rhoncus.
             </p>
-            <button class="btn primary">Kirjaudu</button>
+            <a href="login.php" class="btn primary">Kirjaudu</a>
           </div>
           <div class="col">
-            <img src="#" alt="kuvakaappaus sääpalvelusta" />
+            <img src="../assets/img/image.png" alt="kuvakaappaus sääpalvelusta" width="100%" />
             <!-- Lisä tänne sun kuvakaapaus sääpalvelusta -->
           </div>
 
@@ -57,8 +58,12 @@
         </div>
       </section>
     </main>
+    <?php
+  } else { ?>
+  <h1>Kuopio</h1>
+  <?php } ?>
     <footer>
-      <p><small> @copy Taitaja 2023</small></p>
+      <p>@copy Taitaja 2023</p>
     </footer>
   </body>
 </html>
