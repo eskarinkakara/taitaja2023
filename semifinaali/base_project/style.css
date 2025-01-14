@@ -19,7 +19,13 @@ h1 {
   text-align: center;
 }
 
-main p {
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #101935;
+}
+
+p {
   font-size: 32px;
   margin-top: 25px;
   text-align: center;

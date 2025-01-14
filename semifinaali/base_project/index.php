@@ -61,9 +61,12 @@
     <?php
   } else { ?>
   <h1>Kuopio</h1>
+  <p>Säätiedot 2.-8.1.2023</p>
+  <h1 id="weather"></h1>
   <?php } ?>
     <footer>
       <p>@copy Taitaja 2023</p>
     </footer>
   </body>
 </html>
+<script src="script.js"></script>
